@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tattoo Akatsuki</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="contenedor-nav">
+                <nav class="barra-anavegacion">
+                    <ul class="ul-navegacion">
+                        <li class="li-navegacion"><a class="a-navegacion" href="#inicio">Inicio</a></li>
+                        <li class="li-navegacion"><a class="a-navegacion" href="#galeria">Galeria</a></li>
+                        <li class="li-navegacion"><a class="a-navegacion" href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>    
+
+            <div id="inicio" class="contenedor-titulo">
+                <h1 class="titulo">Tattoo Akatsuki</h1>
+            </div>
+        </header>
+    
+        <main>
+            <section class="sección-información sección">
+                <h2 class="titulo">Sobre el Estudio</h2>
+            
+                <div class="contenedor-info contenedor">
+                    <p class="parrafo1">En tattoo Akatsuki nos especializamos en el estilo de tatuaje Tradicional Japonés, utilizando métodos modernos, los mejores pigmentos disponibles en el mercado y materiales 100% estériles y desechables. Prestando toda la atención a cada detalle superamos los estándares de la industria, para garantizar que su tatuaje se vea lo mejor posible durante toda su vida. <br>Ofrecemos un servicio limpio, amigable y profesional en un ambiente relajado donde cada cliente se lleve la mejor experiencia.</p>
+                    <img class="foto-tatuando" src="./img/tatuando.avif" alt="Foto realizando un tatuaje">
+                    <p class="parrafo2">Akatsuki fue fundado a fines de 2016 por Jonathan Romano, fanatico de la cultura japonesa, quien cuanta con mas de 10 años de experiencia en el mundo del Tatuaje. <br>Jonathan es un artista que disfruta trabajar con sus clientes para lograr el mejor resultado posible</p>
+                    <img class="foto-artista" src="./img/tattoo-artist.avif" alt="Artista de tatuaje">
+                </div>
+            </section>
+
+            <section id="galeria" class="sección-galeria sección">
+                <h2 class="titulo">Galeria</h2>
+
+                <div class="contenedor-fotos contenedor">
+                    <img class="foto-tattoo" src="./img/tattoo1.jpeg" alt="Foto de tatuaje de Ave">
+                    <img class="foto-tattoo" src="./img/tattoo2.jpeg" alt="Foto de tatuaje de Ave">
+                    <img class="foto-tattoo" src="./img/tattoo3.jpeg" alt="Foto de tatuaje de Serpiente">
+                    <img class="foto-tattoo" src="./img/tattoo4.jpg" alt="Foto de tatuaje Pez Koi">
+                    <img class="foto-tattoo" src="./img/tattoo5.jpeg" alt="Foto de tatuaje de Perro Foo">
+                    <img class="foto-tattoo" src="./img/tattoo6.jpeg" alt="Foto de tatuaje de Flor de Loto">
+                    <img class="foto-tattoo" src="./img/tattoo7.jpeg" alt="Foto de tatuaje de Serpiente">
+                    <img class="foto-tattoo" src="./img/tattoo8.jpg" alt="Foto de tatuaje de Tigre">
+                    <img class="foto-tattoo" src="./img/tattoo9.jpeg" alt="Foto de tatuaje de Oni">
+                    <img class="foto-tattoo" src="./img/tattoo10.jpg" alt="Foto de tatuaje de Cabeza">
+                    <img class="foto-tattoo" src="./img/tattoo11.jpg" alt="Foto de tatuaje de Samurai">
+                    <img class="foto-tattoo" src="./img/tattoo12.jpg" alt="Foto de tatuaje Pez Koi">
+                    <img class="foto-tattoo" src="./img/tattoo13.jpg" alt="Foto de tatuaje de Geisha">
+                    <img class="foto-tattoo" src="./img/tattoo14.jpg" alt="Foto de tatuaje de Serpiente">
+                    <img class="foto-tattoo" src="./img/tattoo15.jpg" alt="Foto de tatuaje de Dragon">
+                    <img class="foto-tattoo" src="./img/tattoo16.jpg" alt="Foto de tatuaje de Serpiente">
+                </div>  
+            </section>
+
+            <section id="contacto" class="sección-contacto sección">
+                <h2 class="titulo-contacto titulo">Contactanos</h2>
+
+                <div class="contenedor-contacto contenedor">
+                    <ul class="ul-contacto">
+                        <li class="li-contacto"><img class="icono icono-datos" src="./img/whatsapp.png" alt="Icono de Whatsapp">2494123123</li>
+                        <li class="li-contacto"><img class="icono icono-datos" src="./img/email.png" alt="Icono de Email">tattoo@akatsuki.com</li>
+                        <li class="li-contacto"><img class="icono icono-datos" src="./img/ubicacion.png" alt="Icono de Ubicación">Av. Marconi 1588</li>
+                    </ul>
+
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.0782579611982!2d-59.1265839852081!3d-37.31697391355123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911ff2f0e1a793%3A0x8729fd89496e651b!2sAv.%20Marconi%201588%2C%20B7001%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1677617637971!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+                    <form action="https://formspree.io/f/mqkodawq" method="POST">
+                        <label for="nombre" class="label-form">Nombre y Apellido:
+                            <input type="text" id="nombre"  name="Nombre y Apellido" placeholder="Nombre y Apellido" class="items-form" required/>
+                        </label>
+          
+                        <label for="correo" class="label-form">Email:
+                            <input type="email" id="correo" name="Email" placeholder="ejemplo@ejemplo.com" class="items-form" required/>
+                        </label>
+          
+                        <label for="tel" class="label-form">Telefono:
+                            <input type="text" id="tel" name="Telefono" placeholder="Telefono" class="items-form" required/>
+                        </label>
+          
+                        <label for="tipoConsulta" class="label-form"> Seleccione el tipo de Consulta</label>
+                        <select name="Tipo de Consulta" id="tipoConsulta" class="items-form" required>
+                            <option value="sinSeleccion">Tipo de Consulta</option>
+                            <option value="tatuajes">Tatuajes</option>
+                            <option value="piercing">Piercing</option>
+                            <option value="cuidados">Cuidados</option>
+                            <option value="otras">Otras Consultas</option>
+                        </select>
+                   
+                        <label for="consulta" class="label-form">Escriba su Consulta</label>
+                        <textarea id="consulta" name="Mensaje" placeholder="Escriba su Consulta" class="textarea items-form" required></textarea>
+                        <input type="submit" class="boton" value="Enviar"/>
+                    </form>
+                </div>
+            </section>
+       </main>
+
+        <footer>
+            <p class="p-footer">Seguinos en: 
+                <a class="a-footer" href="http://www.facebook.com"><img class="icono-redes icono" src="./img/facebook.png" alt="Icono de Facebook"></a>
+                <a class="a-footer" href="http://www.instagram.com"><img class="icono-redes icono" src="./img/instagram.png" alt="Icono de Instagram"></a>
+                <a class="a-footer" href="http://www.twitter.com"><img class="icono-redes icono" src="./img/twitter.png" alt="Icono de Twitter"></a>
+            </p>
+       </footer>
+    </body>
+</html>
