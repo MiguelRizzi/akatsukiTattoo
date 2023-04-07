@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Shantell+Sans:ital,wght@1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Shantell Sans', cursive;
+    color: rgb(245, 245, 245);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Barra de Navegacion */
+
+.contenedor-nav {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.barra-navegacion {
+    float: left;
+}
+  
+.ul-navegacion {
+    list-style: none;
+}
+  
+.li-navegacion {
+    float: left;
+    font-size: 15px;
+}
+
+.a-navegacion {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+  
+.li-navegacion:hover {
+    background: rgb(200, 0, 0);
+}  
+
+/* Titulo */
+
+.contenedor-titulo {
+    background-image: url('../img/portada.jpg');
+    height: 310px;
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo{
+    font-family: 'Rock Salt', cursive;
+}
+
+h1 {
+    font-size: 60px;
+    position: relative;
+    top: 95px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*  Sección - Sobre el estudio */
+
+h2 {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.sección {
+    background-image: linear-gradient(180deg, rgb(0,0,0) 40%, rgba(22, 22, 22, 0.8) 100%);
+    padding: 30px 55px;
+} 
+
+.contenedor {                           /* cont info, galeria y contacto */
+    border-radius: 15px;
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0.7) 30%, rgb(0,0,0) 100%);
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+}
+
+.contenedor-info {
+    height: 700px;
+    grid-template-rows: 35% 40% 25%;
+    grid-template-areas:
+        "area1 area4"
+        "area2 area4"
+        "area3 area4";
+}
+
+p {
+    text-align: inherit;
+    font-size: 16px; 
+    padding: 15px;
+}
+
+.parrafo1 {
+    grid-area: area1;
+}
+
+.parrafo2 {
+    grid-area: area3;  
+}
+
+img {
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1.5px solid rgb(34, 34, 34);
+}
+
+.foto-artista {
+    width: 80%;
+    height: 90%;
+    grid-area: area4;
+    object-position: top;
+}
+
+.foto-tatuando {
+    width: 75%;
+    height: 100%;
+    grid-area: area2;
+}
+
+/* Sección - Galeria */
+
+.contenedor-fotos {
+    display: flex;
+    gap: 30px;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.foto-tattoo {
+    width: 250px;
+    height: 350px;
+    transition: transform 0.7s;
+    cursor: pointer;
+}
+
+.foto-tattoo:active {
+    transform: scale(1.5)
+}
+
+/* Sección - Contacto */
+
+.contenedor-contacto {
+    grid-template-rows: 200px 400px;
+    grid-template-areas: 
+        "area1 area3"
+        "area2 area3";
+}
+
+.ul-contacto {
+    list-style: none;
+    grid-area: area1;
+    margin-top: 20px;
+}
+
+.li-contacto {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.icono {                /* Iconos datos de contacto y footer */
+    width: 35px;
+    border: none;  
+    vertical-align: middle;
+}
+
+.icono-datos {
+    margin-right: 12px;
+    filter: invert(100%);
+}
+
+.mapa {
+    width: 90%;
+    height: 290px;
+    border-radius: 3px;
+    grid-area: area2;
+    align-self: start;
+}
+
+/* Formulario */
+
+form {
+    width: 95%;
+    padding: 30px;
+    grid-area: area3;
+}
+
+.label-form {
+    font-size: 14px;
+}
+
+.items-form {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.textarea {
+    height: 200px;
+    resize: none;
+}
+
+.boton {
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: rgb(42, 42, 42);
+}
+
+/* Footer */
+
+footer {
+    text-align:end;
+}
+
+.p-footer {
+    padding: 22px;
+}
+
+.icono-redes {
+    transition: transform 0.3s;
+    margin: 0 6px;
+}
+
+.icono-redes:hover {
+    transform: scale(1.3);
+}
+
+/* Media Queries */
+
+@media(max-width: 1260px ) {
+    p {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .foto-tatuando {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1024px ) {
+    .a-navegacion {
+        padding: 17px;
+    }
+    .li-navegacion, p {
+        font-size: 14px;
+    }
+    .sección {
+        padding: 25px 40px;
+    }
+    .contenedor {
+        padding: 15px 20px;
+    }
+    .contenedor-titulo {
+        height: 280px;
+    }
+    h1 {
+        font-size: 50px;
+        top: 90px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .contenedor-info {
+        height: 570px; 
+        grid-template-rows: 40% 33% 28%;
+    }
+    .mapa {
+        height: 250px;
+    }
+    form {
+        padding: 20px;
+    }
+    .p-footer {
+        padding: 15px;
+    }
+}
+
+@media(max-width: 900px ) {
+    .a-navegacion {
+        padding: 15px;
+    }
+    .li-navegacion, p, .label-form {
+        font-size: 13px;
+    }
+    .sección {
+        padding: 20px 30px;
+    }
+    .contenedor {
+        padding: 12px;
+    }
+    .contenedor-titulo {
+        height: 230px;
+    }
+    h1 {
+        font-size: 45px;
+        top: 70px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .contenedor-info {
+        height: 520px; 
+        grid-template-rows: 42% 32% 26%;
+    }
+    .contenedor-contacto {
+        grid-template-rows: 180px 300px;
+    }
+    .mapa {
+        height: 220px;
+    }
+    .li-contacto {
+        font-size: 16px;
+    }
+    form {
+        padding: 15px;
+    }
+    .items-form {
+        height: 28px;
+        margin-bottom: 4px;
+    }
+    .textarea {
+        height: 160px;
+        margin-bottom: 6px;
+    }
+}
+
+@media(max-width: 730px ) {
+    .li-navegacion, p, .label-form {
+        font-size: 12px;
+    }
+    .a-navegacion{
+        padding: 12px;
+    }
+    .contenedor-titulo {
+        height: 170px;
+    }
+    h1 {
+        font-size: 32px;
+        top: 58px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .parrafo1, .parrafo2 {
+        padding: 20px;
+    }
+    .contenedor-info, .contenedor-contacto {
+        display: block;
+        height: auto;
+    }
+    .contenedor-fotos {
+        gap: 20px;
+    }
+    .icono {
+        width: 28px;
+    }
+    .foto-artista, .mapa, form {
+        width: 90%;
+        margin: auto;
+    }
+    .foto-tatuando {
+        height: auto;
+    }
+    .mapa {
+        height: 280px;
+        margin: 25px 0;
+    }
+}
+
+@media(max-width: 530px ) {
+    .a-navegacion {
+        padding: 7px;
+    }
+    .li-navegacion, p, .label-form {
+        font-size: 10px;
+    }
+    .sección, .contenedor {
+        padding: 10px;
+    }
+    .contenedor-titulo {
+        height: 120px;
+    }
+    h1 {
+        font-size: 25px;
+        top: 40px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .parrafo1, .parrafo2 {
+        padding: 15px 5px;
+    }
+    .li-contacto {
+        font-size: 15px;
+    }
+    .mapa {
+        height: 200px;
+    }
+    form{
+        padding: 0;
+    }
+    .icono {
+        width: 25px;
+    }
+    .icono-redes {
+        margin: 0 3px;
+    }
+    .p-footer {
+        padding: 5px;
+    }
+}
+
+@media(max-width: 380px ) {
+    .foto-tattoo {
+        width: 90%;
+    }
+}
